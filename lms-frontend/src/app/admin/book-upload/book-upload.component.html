@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="custom-header">
+        <nav class="nav-links">
+            <img src="../../../assets/img/logo.png" alt="Logo" class="logo">
+            <a [routerLink]="'/book-detail'" class="active">Book Details</a>
+            <a [routerLink]="'/book-upload'">Book Upload</a>
+            <a [routerLink]="'/student-detail'" routerLinkActive="active">Student Details</a>
+            <a [routerLink]="'/librain'" routerLinkActive="active">Librain Details</a>
+        </nav>
+      </section>
+  <div class="container mt-5 mb-5">
+    <div class="card">
+      <div class="card-header">
+       <h4> Add/Update Book</h4>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="id">ID</label>
+              <input type="text" class="form-control" id="id" placeholder="Unique Identifier">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="isbn">ISBN</label>
+              <input type="text" class="form-control" id="isbn" placeholder="ISBN Number">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Title of the book">
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" placeholder="Author(s) of the book">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="publisher">Publisher</label>
+              <input type="text" class="form-control" id="publisher" placeholder="Publisher of the book">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="year">Publication Year</label>
+              <input type="number" class="form-control" id="year" placeholder="Publication Year">
+            </div>
+          </div>
+          <div class="form-group ">
+            <div class="form-group col-md-12 p-0">
+                <label for="availabilityStatus">genre</label>
+                <select class="form-control" id="availabilityStatus">
+                  <option value="true">genre</option>
+                  <option value="false">genre</option>
+                </select>
+            </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="quantity">Quantity</label>
+              <input type="number" class="form-control" id="quantity" placeholder="Number of copies available">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="availabilityStatus">Availability Status</label>
+              <select class="form-control" id="availabilityStatus">
+                <option value="true">Available</option>
+                <option value="false">Checked Out</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="createdAt">Book Addition Date</label>
+              <input type="datetime-local" class="form-control" id="createdAt">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="updatedAt">Last Update Date</label>
+              <input type="datetime-local" class="form-control" id="updatedAt">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

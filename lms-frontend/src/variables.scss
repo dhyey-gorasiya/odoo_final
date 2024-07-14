@@ -1,0 +1,61 @@
+/* font for application */
+//TBD
+
+/* text/label style for application */
+$js-text-primary-color: #0e4375;
+
+/* button style for application */
+$js-btn-primary-bg-color: #0e4375;
+$js-btn-primary-border-color: #0e4375;
+$js-btn-primary-text-color: #e7f2fc;
+
+$js-btn-secondary-bg-color: #f2f2f2;
+$js-btn-secondary-border-color: #f2f2f2;
+$js-btn-secondary-text-color: #0e4375;
+
+//table styles
+$table-header-color: #ffffff;
+$table-text-color: #000000;
+$table-border-color: white;
+$table-border: 1px solid $table-border-color;
+
+//sidebar styles
+$sidebar-header-color: #ffffff;
+$sidebar-right-border-color: #d3d3d3;
+$sidebar-hover-text-color: #000000;
+$sidebar-hover-background-color: #9dc3e3;
+
+$required-field-color: red;
+
+//loader grey screen
+$loader-background-color: rgba(255, 255, 255, 0.5);
+
+//Registration page styles
+$registration-hint-button: grey;
+$registration-hint-border: #e7e7f1;
+
+//footer styles
+$footer-background-color: #ffffff;
+$facebook-icon-color: #3b5998;
+$twitter-icon-color: #55acee;
+$instagram-icon-color: #55acee;
+$footer-link-color: #0d6efd;
+
+//user-profile
+$skill-chips-background-color: #efefef;
+
+//notification-tab
+$tab-button-bg-color: #fff;
+$notification-tab-color: #333;
+$notification-tab-hover-color: #555;
+$notification-tab-checked-color: #222;
+
+//
+$color-white: #ffffff;
+$color-black-transparent: rgba(0, 0, 0, 0.15);
+$color-light-gray: #e9ecef;
+$input-border: #dee2e6;
+
+$success : #22bb33;
+$failure : #bb2124;
+$info : #5bc0de;

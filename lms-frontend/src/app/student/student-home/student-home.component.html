@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <section class="custom-header">
+            <div class="logo-container">
+                <img src="../../../assets/img/logo.png" class="logo">
+                <p class="logo-text mb-0">Library Management System</p>
+            </div>
+            <nav class="nav-links">
+                <a [routerLink]="'/book-detail'" class="active">Home</a>
+            </nav>
+            <button class="btn-log text-light">LogOut</button>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="search-section mb-4">
+                        <h2 class="h5">Search Books</h2>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for books..." id="searchInput">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" id="searchBtn">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-bordered text-center">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Arriving Book Name</th>
+                                        <th scope="col">Author</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr *ngFor="let data of source">
+                                        <td>{{ data.isbn }}</td>
+                                        <td>{{ data.title }}</td>
+                                        <td>{{ data.author }}</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                          <div class="col-md-6">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Trending Book Name</th>
+                                    <th scope="col">Author</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of source1">
+                                        <td>{{ data.isbn }}</td>
+                                        <td>{{ data.title }}</td>
+                                        <td>{{ data.author }}</td>
+                                      </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </div>
+                <div class="col-md-3">
+                    <div class="user-profile text-center">
+                        <h2 class="h5 text-light">User Profile</h2>
+                        <img src="./img/download.jpeg" class="user-avatar" alt="User Avatar">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body">
+                                <address class="mb-0">
+                                    <p>Name</p>
+                                    <p>Age</p>
+                                    <p>Address</p>
+                                    <p>Gender</p>
+                                    <p>Mobile Number</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
